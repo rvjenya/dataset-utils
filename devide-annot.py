@@ -19,12 +19,12 @@ args = vars(ap.parse_args())
 
 
 
-f3 = open('args['train']','r') #train file path
+f3 = open('args["train"]') #train file path
 for line2 in f3.readlines():
     line3=line2[:-1] #Read all numbers 000000
-    xmldir = 'args['annot-xml']'
+    xmldir = 'args["annot-xml"]'
      #Absolute path of all xml files
-    savedir = 'args['extracted']'
+    savedir = 'args["extracted"]'
     #Absolute path extracted from the xml file used for train
     xmllist = os.listdir(xmldir)
     for xml in xmllist:

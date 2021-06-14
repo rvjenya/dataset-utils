@@ -105,7 +105,7 @@ def convert(xml_dir, json_file):
 if __name__ == '__main__':
     folder_list= ["train","val","test"]
     #Note to change base_dir to local actual image and annotated file path
-    base_dir = 'args['path']'
+    base_dir = 'args["path"]'
     #Modify to your own path
     
     for i in range(3):
